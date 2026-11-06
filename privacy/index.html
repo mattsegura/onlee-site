@@ -9,14 +9,24 @@
 <body>
 <main>
 <h1>Onlee Privacy Policy</h1>
-<p class="meta">Last updated: October 19, 2026</p>
+<p class="meta">Last updated: November 5, 2026</p>
 <p>Onlee is a language-learning app published by ZAPR LABS LLC ("we"). This policy explains what data the app handles.</p>
 <h2>What stays on your device</h2>
-<p>Your learning progress, streaks, saved sentences, settings and reminder schedule are stored <strong>only on your device</strong>. Onlee has no accounts and no server, and we don't receive any of this data.</p>
+<p>Your learning progress, streaks, saved sentences, settings and reminder schedule are stored <strong>only on your device</strong>. Onlee has no accounts, and we don't receive any of this data. The only exception is Talk, described below.</p>
 <h2>Microphone and speech recognition</h2>
-<p>When you use "Say it", Onlee records your voice to score your pronunciation. Recognition runs on your device when your device supports it. Otherwise Apple's speech recognition service processes the audio under <a href="https://www.apple.com/legal/privacy/">Apple's privacy policy</a>. Onlee doesn't store or send recordings anywhere else.</p>
+<p>When you use "Say it", Onlee records your voice to score your pronunciation. Recognition runs on your device when your device supports it. Otherwise Apple's speech recognition service processes the audio under <a href="https://www.apple.com/legal/privacy/">Apple's privacy policy</a>. So you can hear yourself next to the model voice, your latest attempt is kept in a temporary file on your device and replaced by your next one. Onlee doesn't store or send recordings anywhere else.</p>
+<h2>Talking with your tutor (Talk)</h2>
+<p>Talk is a spoken conversation with an AI tutor. The first time you use it, the app explains this and asks you to agree before anything is sent.</p>
+<ul>
+<li><strong>Your voice:</strong> to talk in real time, the app streams your voice from the microphone, and plays the tutor's voice   back, through <strong>Google's Gemini API</strong>. Google transcribes and answers it as you speak. Onlee doesn't record or keep   the audio. Onlee uses Google's paid Gemini API, under whose <a href="https://ai.google.dev/gemini-api/terms">terms</a> Google   doesn't use this content to improve its products.</li>
+<li><strong>The conversation text</strong> (what you said and what your tutor said), with your level, your chosen tutor and the   sentences you're practising, goes to our server and from there to Google's Gemini API to write your recap. Our server   doesn't store it.</li>
+<li><strong>What your tutor remembers</strong> about you (for example "has a sister in Sevilla") is kept on your device and sent along   with each talk. You can clear it any time in Settings → Talk.</li>
+<li><strong>Offline practice</strong> (when there's no connection) runs entirely on your device.</li>
+</ul>
+<p>Don't share anything in a talk that you wouldn't want to leave your device. Your tutor is an AI and can make mistakes.</p>
 <h2>Purchases</h2>
 <p>Subscriptions are processed by Apple. We never see your payment details. The app checks your subscription status with the App Store.</p>
+<p>For online Talk, the app also sends Apple's signed subscription transaction to our server. We verify it with Apple to check that your subscription is active, including any eligible billing grace period. To protect the service from abuse, we store a one-way hashed subscription identifier and request-usage counters in Google Cloud Firestore. These counters contain no conversation text or audio. They are configured to expire after two days; automated deletion may take additional processing time. We don't use them for advertising.</p>
 <h2>Tracking, ads and analytics</h2>
 <p>Onlee has no ads, no third-party analytics and no tracking across apps or websites.</p>
 <h2>Children</h2>
@@ -26,8 +36,7 @@
 <h2>Changes</h2>
 <p>If this policy changes, we'll update this page and the date above.</p>
 <h2>Contact</h2>
-<p><a href="mailto:annuityleads@mail.grokbot.com">annuityleads@mail.grokbot.com</a></p>
-<footer>Onlee · ZAPR LABS LLC · <a href="/onlee-site/privacy/">Privacy</a> · <a href="/onlee-site/support/">Support</a></footer>
+<p>annuityleads@mail.grokbot.com</p>
 </main>
 </body>
 </html>
